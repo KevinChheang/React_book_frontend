@@ -1,0 +1,28 @@
+.Navigation {
+  background-color: darkgreen;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.Navigation-nav {
+  margin-left: 35%;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: black;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: white;
+}
+
+.nav-link:hover {
+  color: yellow;
+}
+
+#Navigation-logout {
+  color: rgb(255, 80, 80);
+  text-transform: uppercase;
+}

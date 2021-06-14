@@ -1,0 +1,9 @@
+.CommentCard {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.CommentCard-title {
+    text-transform: uppercase;
+    text-decoration: underline;
+}

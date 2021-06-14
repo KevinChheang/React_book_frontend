@@ -1,0 +1,36 @@
+.BookDetail {
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.BookDetail-description {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.BookDetail-info {
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-top: 10px;
+}
+
+.BookDetail-btn-thumb {
+    background-color: transparent;
+    border: none;
+}
+
+.BookDetail-img-up {
+    padding-right: 30px;
+}
+
+.BookDetail-img-down {
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+img:hover {
+    cursor: pointer;
+}
