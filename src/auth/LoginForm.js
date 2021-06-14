@@ -79,7 +79,7 @@ function LoginForm({ login }) {
                     : null}
 
                 <button
-                    className="btn btn-primary float-right"
+                    className="btn btn-primary float-right my-1"
                 >
                   Submit
                 </button>

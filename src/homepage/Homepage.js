@@ -25,7 +25,7 @@ function Homepage() {
               </h3>
               : (
                   <p>
-                    <Link className="btn btn-primary font-weight-bold mr-3"
+                    <Link className="btn btn-primary font-weight-bold mx-1"
                           to="/login">
                       Log in
                     </Link>

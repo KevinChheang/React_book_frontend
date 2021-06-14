@@ -115,8 +115,8 @@ function BookDetail() {
       <div className="BookDetail container">
         <div className="row">
             <div className="col-md-12">
-                <h3>{book.title}</h3>
-                <h5>{book.subtitle}</h5>
+                <h1>{book.title}</h1>
+                <h4>{book.subtitle}</h4>
             </div>
         </div>
         <div className="row">

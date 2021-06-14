@@ -113,7 +113,7 @@ function SignupForm({ signup }) {
 
                 <button
                     type="submit"
-                    className="btn btn-primary float-right"
+                    className="btn btn-primary my-1"
                 >
                   Submit
                 </button>
