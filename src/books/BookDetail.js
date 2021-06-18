@@ -130,27 +130,31 @@ function BookDetail() {
         </div>
         {/* Thumb up/down, Add button */}
         <button className="BookDetail-btn-thumb" onClick={handleThumbUp} disabled={rated}>
+          <sup>
             <img 
-                className="BookDetail-img-up mx-3" 
-                src={ThumbUpIcon} 
-                alt="Thumb up" 
-                />
+                  className="BookDetail-img-up my-3" 
+                  src={ThumbUpIcon} 
+                  alt="Thumb up" 
+                  />
+          </sup>
         </button>
 
-        {thumbUp <= 0 ? "" : <small className="text-primary fs-5">{thumbUp}</small>}
+        {thumbUp <= 0 ? "" : <sub className="BookDetail-rating-up text-primary fs-5">{thumbUp}</sub>}
 
         <button className="BookDetail-btn-thumb" onClick={handleThumbDown} disabled={rated}>
-            <img
-                className="BookDetail-img-down mx-4" 
-                src={ThumbDownIcon} 
-                alt="Thumb down"
-                />
+            <sup>
+              <img
+                  className="BookDetail-img-down" 
+                  src={ThumbDownIcon} 
+                  alt="Thumb down"
+                  />
+            </sup>
         </button>
 
-        {thumbDown <= 0 ? "" : <small className="text-danger fs-5">{thumbDown}</small>}
+        {thumbDown <= 0 ? "" : <sub className="BookDetail-rating-down text-danger fs-5">{thumbDown}</sub>}
 
         <button 
-            className="btn btn-primary my-2 mx-2"
+            className="btn btn-primary mx-2"
             disabled={added}
             onClick={handleAddBook}
         >

@@ -3,7 +3,19 @@
   width: 85%;
 }
 
-.SearchForm input:focus {
+/* .SearchForm input:focus {
   box-shadow: none;
   border-color:rgb(20, 90, 219);
+} */
+
+.SearchForm-input {
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+.SearchForm-btn {
+  border-radius: 5px;
+  height: 45px;
+  background-color: #0d6efd;
 }

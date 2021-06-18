@@ -3,15 +3,14 @@ import UserContext from "./auth/UserContext";
 
 const demoUser = {
   username: "testuser",
-  first_name: "testfirst",
-  last_name: "testlast",
-  email: "test@test.net",
-  photo_url: null,
+  firstName: "testfirst",
+  lastName: "testlast",
+  email: "test@gmail.com",
 };
 
 const UserProvider =
-    ({ children, currentUser = demoUser, hasAppliedToJob = () => false }) => (
-    <UserContext.Provider value={{ currentUser, hasAppliedToJob }}>
+    ({ children, currentUser = demoUser, hasAddedBook = () => false }) => (
+    <UserContext.Provider value={{ currentUser, hasAddedBook }}>
       {children}
     </UserContext.Provider>
 );

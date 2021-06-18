@@ -33,14 +33,14 @@ function SearchForm({ searchFor }) {
       <div className="SearchForm mb-4">
         <form className="form-inline" onSubmit={handleSubmit}>
           <input
-              className="form-control form-control-lg d-inline flex-grow-1"
+              className="SearchForm-input mx-3"
               id="SearchForm-search"
               name="searchTerm"
-              placeholder="Enter a book title"
+              placeholder="Search by title"
               value={searchTerm}
               onChange={handleChange}
           />
-          <button type="submit" className="btn btn-lg btn-primary">
+          <button type="submit" className="SearchForm-btn">
             Submit
           </button>
         </form>

@@ -4,6 +4,8 @@ import BookApi from "../api/api";
 import BookCard from "./BookCard";
 import LoadingSpinner from "../common/LoadingSpinner";
 
+import "./BookList.css";
+
 /** Show page with list of books.
  *
  * On mount, loads books from API.

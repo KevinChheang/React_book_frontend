@@ -2,6 +2,10 @@
     background-color: white;
 }
 
+.BookCard:hover {
+    transform: scale(1.02);
+}
+
 a {
     text-decoration: none;
     font-size: 1.3rem;

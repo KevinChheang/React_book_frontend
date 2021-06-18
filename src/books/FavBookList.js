@@ -3,6 +3,8 @@ import BookApi from "../api/api";
 import UserContext from "../auth/UserContext";
 import { Link } from "react-router-dom";
 
+import "./FavBookList.css";
+
 /** Show a list of user's fav books.
  *
  * This is routed to at /favBooks
@@ -36,12 +38,12 @@ function FavBookList() {
 
     return (
         <div className="FavBookList container bg-white col-md-8">
-            { favBooks.length !== 0 ?
+            { favBooks.length <= 0 ?
                 (<div className="row">
                     {favBooks.map(favBook => (
                         <div key={favBook.isbn} className="col-md-4">
                             <Link className={favBook.isbn} to={`/books/${favBook.isbn}`}>
-                                <div>
+                                <div className="FavBookList-img">
                                     <img 
                                         src={favBook.img_url} 
                                         alt={favBook.title}
@@ -49,7 +51,7 @@ function FavBookList() {
                                         width="280px" />
                                 </div>
                             </Link>
-                            <button onClick={handleDeleteBook} className="btn btn-danger my-2">Remove</button>
+                            <button onClick={handleDeleteBook} className="FavBookList-remove-btn btn btn-danger">Remove</button>
                         </div>
                     ))}
                 </div>)

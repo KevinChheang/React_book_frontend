@@ -26,3 +26,5 @@ it("matches snapshot when logged out", function () {
   );
   expect(asFragment()).toMatchSnapshot();
 });
+
+/* test that username is renderred */

@@ -12,4 +12,18 @@ it("renders without crashing", function () {
             </UserProvider>
         </MemoryRouter>,
     );
-  });
+});
+
+it("matches snapshot", function () {
+    const { asFragment } = render(
+        <MemoryRouter>
+            <UserProvider>
+                <FavBookList />
+            </UserProvider>
+        </MemoryRouter>,
+    );
+    expect(asFragment()).toMatchSnapshot();
+});
+
+/* test add book here
+then test fav book list has remove button */

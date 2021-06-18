@@ -12,4 +12,15 @@ it("renders without crashing", function () {
             </UserProvider>
         </MemoryRouter>,
     );
-  });
+});
+
+it("matches snapshot", function () {
+    const { asFragment } = render(
+        <MemoryRouter>
+            <UserProvider>
+                <BookCard />
+            </UserProvider>
+        </MemoryRouter>,
+    );
+    expect(asFragment()).toMatchSnapshot();
+});

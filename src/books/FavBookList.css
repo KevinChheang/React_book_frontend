@@ -1,0 +1,9 @@
+.FavBookList-img:hover {
+    transform: scale(1.02);
+}
+
+.FavBookList-remove-btn {
+    margin-top: 5px;
+    margin-bottom: 35px;
+    display: flex;
+}
